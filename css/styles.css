@@ -878,10 +878,12 @@ p {
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
 }
 .modal {
+  display: block;
   position: absolute;
   width: 528px;
   height: 581px;
   top: 221px;
+  padding: 40px;
 
   background: var(--light-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -929,4 +931,21 @@ p {
   visibility: hidden;
   pointer-events: none;
 }
-/* ДЗ-6 */
+
+/* modal1-form */
+.form-title {
+  display: block;
+  margin-bottom: 30px;
+}
+.form-label {
+  position: relative;
+  display: block;
+}
+.form-icon {
+  display: inline-block;
+  left: 40px;
+  position: absolute;
+}
+.form-container {
+  margin-bottom: 28px;
+}
