@@ -69,6 +69,18 @@ h6,
 p {
   margin: 0;
 }
+.visuaaly-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* Header contact */
 /* position: fixed;
   top: 0;
@@ -978,13 +990,21 @@ p {
   top: 50%;
   left: 18px;
   border: 0;
+  cursor: pointer;
+}
+.form-input:hover,
+.form-input:focus,
+.modal-comment:hover,
+.modal-comment:focus {
+  border: 1px solid var(--accent);
+  border-radius: 4px;
 }
 .form-input {
   display: inline-block;
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 12px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1008,6 +1028,7 @@ p {
 }
 .modal-comment {
   width: 100%;
+
   padding: 12px 16px;
   resize: none;
   font-style: normal;
@@ -1049,31 +1070,44 @@ p {
 
   color: var(--light-text);
 }
-.checkbox-text {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
 
-  color: var(--secondary-text);
-}
-.contrakt {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--accent);
-}
-.checkbox-group {
+.register-form-agreement {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   margin-bottom: 30px;
 }
-/* .checkbox-icon {
-} */
+
+.register-checkbox:checked + .register-icon .register-icon-uncheck {
+  opacity: 0;
+  transition: opacity var(--anim-fast);
+}
+
+.register-icon-check {
+  opacity: 0;
+  fill: var(--main-text);
+  transition: opacity var(--anim-fast);
+}
+
+.register-checkbox:checked + .register-icon .register-icon-check {
+  opacity: 1;
+}
+
+.register-form-agreement-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  user-select: none;
+  text-underline-position: under;
+  color: var(--secondary-text);
+}
+
+.register-form-agreement-link {
+  color: var(--accent);
+}
 /* subscription-footer */
 
 .subscription-text {

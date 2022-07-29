@@ -630,12 +630,11 @@
           <strong class="form-title"
             >Оставьте свои данные, мы вам перезвоним</strong
           >
-
           <label class="form-group">
             <span class="form-label">Имя</span>
             <input class="form-input" type="name" name="user-name" />
             <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#person-black-18dp-1"></use>
+              <use href="./images/icons.svg#person-black"></use>
             </svg>
           </label>
 
@@ -643,7 +642,7 @@
             <span class="form-label">Телефон</span>
             <input class="form-input" type="tel" name="user-phone" />
             <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#phone-black-18dp-1"></use>
+              <use href="./images/icons.svg#phone-black"></use>
             </svg>
           </label>
 
@@ -651,7 +650,7 @@
             <span class="form-label">Почта</span>
             <input class="form-input" type="email" name="user-email" />
             <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#email-black-18dp-1"></use>
+              <use href="./images/icons.svg#email-black"></use>
             </svg>
           </label>
 
@@ -664,15 +663,28 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="checkbox-group">
-            <input type="checkbox" name="" id="" />
-            <span class="checkbox-text"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="contrakt" href="">Условия договора</a></span
-            >
-            <!-- <svg width="16" height="15" class="checkbox-icon">
-              <use href="./images/icons.svg#Checkbox"></use>
-            </svg> -->
+          <label class="register-form-agreement">
+            <input
+              class="register-checkbox visuaaly-hidden"
+              type="checkbox"
+              name="agreement"
+            />
+            <svg class="register-icon" width="16" height="15">
+              <use
+                class="register-icon-uncheck"
+                href="./images/icons.svg#Checkbox"
+              ></use>
+              <use
+                class="register-icon-check"
+                href="./images/icons.svg#icon-check"
+              ></use>
+            </svg>
+            <span class="register-form-agreement-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="register-form-agreement-link" href=""
+                >Условия договора</a
+              >
+            </span>
           </label>
           <button class="modal-btn-forum modal-btn-text" type="submit">
             Отправить
