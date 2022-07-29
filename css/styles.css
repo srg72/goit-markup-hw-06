@@ -989,31 +989,41 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.textarea {
-  resize: none;
-}
 .form-comment {
   display: flex;
   flex-direction: column;
-
-  height: 120px;
   margin-bottom: 20px;
 }
-.modal-comment {
-  height: 120px;
+
+.form-label-comment {
+  display: inline-block;
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  color: var(--secondary-text);
+}
+.modal-comment {
+  width: 100%;
   padding: 12px 16px;
+  resize: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   color: rgba(117, 117, 117, 0.5);
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  resize: none;
 }
 
 .modal-btn-forum {
-  display: inline-block;
+  display: inline-flex;
   width: 200px;
 
   margin-right: auto;
@@ -1023,10 +1033,11 @@ p {
   padding-bottom: 10px;
   padding-left: 56px;
   border: 0;
-  /*  background: #188ce8; */
+
   background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 .modal-btn-text {
   font-style: normal;
