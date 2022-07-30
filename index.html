@@ -595,7 +595,7 @@
             </li>
           </ul>
         </div>
-        <form action="" class="subscription">
+        <form action="#" class="subscription">
           <h3 class="subscription-text">Подпишитесь на рассылку</h3>
           <div class="subscription-footer">
             <label class="subscription-email">
@@ -603,7 +603,6 @@
                 class="subscription-input subscription-input-text"
                 type="email"
                 name="user-email"
-                rows="1"
                 placeholder="E-mail"
               />
             </label>
@@ -618,81 +617,82 @@
           </div>
         </form>
       </div>
-      <!--  Modal window -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-btn" type="button" data-modal-close>
-            <svg class="modal-btn-icon" width="18" height="18">
-              <use href="./images/icons.svg#close-black"></use>
-            </svg>
-          </button>
-          <!-- Форма -->
-          <form class="form" role="group">
-            <strong class="form-title"
-              >Оставьте свои данные, мы вам перезвоним</strong
-            >
-            <label class="form-group">
-              <span class="form-label">Имя</span>
-              <input class="form-input" type="name" name="user-name" />
-              <svg class="form-icon" width="18" height="18">
-                <use href="./images/icons.svg#person-black"></use>
-              </svg>
-            </label>
-            <label class="form-group">
-              <span class="form-label">Телефон</span>
-              <input class="form-input" type="tel" name="user-phone" />
-              <svg class="form-icon" width="18" height="18">
-                <use href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </label>
-
-            <label class="form-group">
-              <span class="form-label">Почта</span>
-              <input class="form-input" type="email" name="user-email" />
-              <svg class="form-icon" width="18" height="18">
-                <use href="./images/icons.svg#email-black"></use>
-              </svg>
-            </label>
-
-            <label class="form-comment">
-              <span class="form-label-comment">Комментарий</span>
-              <textarea
-                class="modal-comment"
-                name=""
-                rows="5"
-                placeholder="Введите текст"
-              ></textarea>
-            </label>
-            <label class="register-form-agreement">
-              <input
-                class="register-checkbox visuaaly-hidden"
-                type="checkbox"
-                name="agreement"
-              />
-              <svg class="register-icon" width="16" height="15">
-                <use
-                  class="register-icon-uncheck"
-                  href="./images/icons.svg#Checkbox"
-                ></use>
-                <use
-                  class="register-icon-check"
-                  href="./images/icons.svg#icon-check"
-                ></use>
-              </svg>
-              <span class="register-form-agreement-text">
-                Соглашаюсь с рассылкой и принимаю
-                <a class="register-form-agreement-link" href=""
-                  >Условия договора</a
-                >
-              </span>
-            </label>
-            <button class="modal-btn-forum modal-btn-text" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-      </div>
     </footer>
+    <!--  Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="18" height="18">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <!-- Форма -->
+        <form class="form">
+          <strong class="form-title"
+            >Оставьте свои данные, мы вам перезвоним</strong
+          >
+          <label class="form-group">
+            <span class="form-label">Имя</span>
+            <input class="form-input" type="text" name="user-name" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" type="tel" name="user-phone" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+          </label>
+
+          <label class="form-group">
+            <span class="form-label">Почта</span>
+            <input class="form-input" type="email" name="user-email" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#email-black"></use>
+            </svg>
+          </label>
+
+          <label class="form-comment">
+            <span class="form-label-comment">Комментарий</span>
+            <textarea
+              class="modal-comment modal-comment-text"
+              name="#"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="register-form-agreement">
+            <input
+              class="register-checkbox visuaaly-hidden"
+              type="checkbox"
+              name="agreement"
+            />
+            <svg class="register-icon" width="16" height="15">
+              <use
+                class="register-icon-uncheck"
+                href="./images/icons.svg#Checkbox"
+              ></use>
+              <use
+                class="register-icon-check"
+                href="./images/icons.svg#icon-check"
+              ></use>
+            </svg>
+            <span class="register-form-agreement-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="register-form-agreement-link" href=""
+                >Условия договора</a
+              >
+            </span>
+          </label>
+          <button class="modal-btn-forum modal-btn-text" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
   </body>

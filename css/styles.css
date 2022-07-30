@@ -1064,22 +1064,24 @@ p {
 
   color: var(--secondary-text);
 }
+
 .modal-comment {
   width: 100%;
 
   padding: 12px 16px;
   resize: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--anim-fast);
+}
+.modal-comment-text::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-btn-forum {
@@ -1182,7 +1184,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: border var(--anim-fast);
 }
-.subscription-input-text {
+.subscription-input-text::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
