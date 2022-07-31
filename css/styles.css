@@ -1027,6 +1027,7 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--anim-fast);
+  cursor: pointer;
 }
 .form-icon:active {
   fill: var(--accent);
